@@ -1,6 +1,5 @@
 import java.security.KeyPair;
 import java.util.*;
-
 public class MapInterface {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -26,5 +25,8 @@ public class MapInterface {
         mp.remove(3);
         System.out.println("Key "+mp.keySet());
         System.out.println("Value "+mp.values());
+
+
+        System.out.println(mp);
     }
 }
