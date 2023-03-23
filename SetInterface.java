@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-public class SetInterface {
+public class          SetInterface {
     public static void main(String[] args) {
         Set<Integer> set = new HashSet<>();
         Scanner input = new Scanner(System.in);

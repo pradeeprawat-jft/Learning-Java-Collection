@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class ListInterface {
     public static void main(String[] args) {
@@ -21,12 +18,15 @@ public class ListInterface {
 
         System.out.println();
         v.add(1, 20); // insert 20 at index 1
+        System.out.println(v.contains(1)); // check whether element is Present or not
+
         int length = v.size();  //get size of List
         v.set(0, 10); // replace 10 at index 0
         List<Integer> v2 = new ArrayList<>();
         v2.add(40);
         v2.add(50);
         v2.add(60);
+
         v.addAll(v2); // adding new arrayList(v2) to old arrayList(v)
         System.out.println("element of index 3 is " + v.get(3)); // get element in index 3
         v.sort(Collections.reverseOrder());
@@ -36,8 +36,15 @@ public class ListInterface {
 
         System.out.println();
         Collections.sort(v);
+
         for (Integer i : v) {
             System.out.print(i + " ");
+        }
+
+        Iterator<Integer> it = v.iterator();
+        while (it.hasNext())
+        {
+            System.out.println(" "+it.next());
         }
     }
 }

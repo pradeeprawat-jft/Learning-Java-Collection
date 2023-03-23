@@ -8,7 +8,6 @@ public class QueueInterface {
         Queue<Integer> q = new LinkedList<>();
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
-
         for (int i = 0 ;i<n;i++)
         {
             q.offer(input.nextInt());
@@ -22,11 +21,6 @@ public class QueueInterface {
         System.out.println("removed Element with Remove and element is " + q.remove());
         System.out.println("Front Element is with element " + q.element());
         System.out.println("Front Element is with peek " + q.peek());
-
         System.out.println("After " + q);
-
-
-
-
     }
 }
